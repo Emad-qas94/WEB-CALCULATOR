@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Scientific Calculator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <span>Welcome, {{username}}</span>
+            <a href="/history" class="nav-btn">History</a> |
+            <a href="/logout" class="nav-btn">Logout</a>
+        </div>
+        <div class="display">
+            <input type="text" id="calc-display" readonly />
+        </div>
+        <div class="buttons" id="buttons"></div>
+        <div style="margin-top:10px;">
+            <button id="save-btn">Save</button>
+        </div>
+    </div>
+    <script src="/static/ui.js"></script>
+</body>
+</html>

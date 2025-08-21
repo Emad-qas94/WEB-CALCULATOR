@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation History</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="calculator" style="max-width:600px">
+        <div class="header">
+            <span>History for {{username}}</span>
+            <a href="/" class="nav-btn">Calculator</a> |
+            <a href="/logout" class="nav-btn">Logout</a>
+        </div>
+        <h3>Your Last 50 Calculations</h3>
+        <div id="history">
+            {% for rec in history %}
+                <div class="history-entry">
+                    <span>{{rec[4][:19]}} | <b>{{rec[2]}}</b> = <b>{{rec[3]}}</b></span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
