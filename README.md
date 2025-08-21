@@ -8,6 +8,19 @@ This project is a full-featured, web-based scientific calculator that offers mor
 
 The application is built to be intuitive and reliable, serving as a powerful tool for students, engineers, and anyone in need of a quick and dependable calculator. By saving all calculations to a database, it eliminates the need to manually record results and offers a convenient way to track and review past work.
 
+Key Features
+
+    User Authentication: Secure user registration and login system.
+
+    Scientific Calculation: A comprehensive set of scientific functions.
+
+    Persistent History: All calculations are automatically saved to a relational database, providing a detailed history for each user.
+
+    History Page: A dedicated and user-friendly page.
+
+    Responsive Design: A clean, responsive user interface that works seamlessly on various devices and screen sizes.
+
+
 Technologies Used
 
 This application is built using a modern and efficient technology stack, with each component playing a crucial role in its functionality:
@@ -36,36 +49,15 @@ Setup and Installation
 
     Clone the Repository:
 
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/Emad-qas94/WEB-CALCULATOR.git
+   
+    Install the required packages using pip:
+        
+    pip install Flask werkzeug
 
-    Install Dependencies:
-
-    This project relies on a few Python packages that need to be installed. We recommend using a virtual environment to manage dependencies and avoid conflicts with other projects.
-
-        Create a virtual environment:
-
-        python -m venv venv
-
-        Activate the virtual environment:
-
-            On macOS and Linux:
-
-            source venv/bin/activate
-
-            On Windows:
-
-            venv\Scripts\activate
-
-        Install the required packages using pip:
-
-        pip install Flask werkzeug
-
-    If your project uses a specific database connector, such as psycopg2 for PostgreSQL or mysql-connector-python for MySQL, you would need to install that package here as well. For a simple local setup using SQLite, no additional package is needed.
 
     Run the Application:
 
-    Once the dependencies are installed, you can start the Flask application.
 
     python app.py
 
